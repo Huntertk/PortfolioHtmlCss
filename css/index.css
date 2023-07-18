@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700&family=Inter:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    font-family: 'DM+Sans', sans-serif;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    position: relative;
+}
+header{
+    position: fixed;
+}
+
+.header-main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.3rem;
+    background-color: #2C3333;
+    color: #f5f5f5;
+}
+.nav-img-container{
+    width: 50%;
+}
+
+.nav-logo{
+    filter: invert(100%);
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    position: absolute;
+    background-color: #2C3333;
+    color: #f5f5f5;
+    padding: 0.3rem 0.5rem;
+    
+}
+.nav-ul{
+    list-style: none;
+}
+.nav-ul li{
+    font-size: 1.2rem;
+    padding: 0.5rem 0.3rem;
+    margin: 1rem 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.side-nav {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.navBtn-open span,
+.navBtn-close span
+{
+    padding-right: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.close{
+    display: none;
+}
+.open{
+    display: block;
+}
+
+
+
+
+.rotate-center {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Navbar Media*/
+@media screen and (min-width:768px) {
+    .nav-logo{
+        width: 40%;
+    }
+    .nav-ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-ul li{
+        font-size: 2.2rem;
+    }
+}
+
+
+
+/*Section*/
+.developer-section,
+.developer-details,
+.developer-img{
+    width: 100%;
+}
+
+.avatar-img{
+    width: 70%;
+}
+
+.developer-section,
+.services,
+.projects-section,
+.contact-form-section,
+footer{
+    padding: 1rem 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.developer-details{
+    margin: 3rem 0 1rem 0;
+}
+.developer-details h1{
+    font-size: 2rem;
+    margin: 3rem 0.5rem 0.5rem 0.5rem;
+    color: #2C3333;
+}
+
+.developer-details h2,
+.about-developer h2,
+.services h2,
+.projects-section h2,
+.contact-form-section h2,
+footer h1{
+    font-size: 2rem;
+    color: #27374D;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 8px #9DB2BF;
+}
+.developer-details h3,
+.projects-section h3,
+footer h3{
+    margin: 0.3rem 0 1rem 0; 
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #2E4F4F;
+    text-shadow: 0px 0px 2px #2C3333;
+}
+.developer-details p,
+.about-developer p,
+.service-card p,
+footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+
+}
+.developer-details .btn,
+.about-developer .btn {
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 0.3rem 1rem;
+    margin: 1rem;
+    background-color: #27374D;
+    color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #27374D;
+    opacity: 1;
+    outline: none;
+} 
+.developer-details .btn:hover,
+.about-developer .btn:hover
+{
+    opacity: 0.7;
+}
+.underline{
+    background-color: #2C3333;
+    height: 5px;
+    width: 20%;
+    margin: 2rem auto;
+    border-radius: 16px;
+}
+
+
+
+
+/*Card*/
+.services-card-container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+    margin: 1rem 0;
+}
+#card-heading{
+    color: #f5f5f5;
+    margin: 1rem 0.3rem;
+}
+.service-card{
+    background-color: #27374D;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+/*Projects*/
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.project{
+    padding: 1rem;
+    background-color: #2E4F4F;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+.project-img{
+    border-radius: 15px;
+    width: 90%;
+}
+.projects-section h3{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: #f5f5f5;
+}
+
+/*Form*/
+.contact-form-section{
+    background: #27374D;
+    margin: 1rem 0.5rem;
+    border-radius: 16px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.contact-form-section h2{
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    text-shadow: none;
+}
+.input-tab{
+    background-color: #27374D;
+    color: #f5f5f5;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.form-btn{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+
+/*Section Media*/
+@media screen and (min-width:768px) {
+    .developer-details h2,
+    .about-developer h2,
+    .services h2,
+    .projects-section h2,
+    .contact-form-section h2,
+    footer h1
+    {
+        font-size: 2.2rem;
+    }
+
+
+        .developer-details h3,
+        .projects-section h3,
+        footer h3 {
+            font-size: 1.8rem;
+
+        }
+    
+        .developer-details p,
+        .about-developer p,
+        .service-card p,
+        footer p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            letter-spacing: 2px;
+    
+        }
+        .avatar-img{
+            width: 35%;
+        }
+        .developer-section,
+        .services,
+        .projects-section,
+        .contact-form-section,
+        footer{
+            margin: auto auto;
+            max-width: 80%;
+        }
+        .projects-section{
+            width: 60%;
+        }
+        .projects{
+            width: 40%;
+        }
+        .project-img{
+            width: 50%;
+        }
+}
