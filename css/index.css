@@ -12,6 +12,8 @@ body{
     scroll-behavior: smooth;
     font-family: sans-serif;
     position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 header{
     position: fixed;
@@ -22,8 +24,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.3rem;
-    /* background-color: #2C3333;
-    color: #f5f5f5; */
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(20px);
 
@@ -39,7 +39,7 @@ header{
     width: 100%;
     position: absolute;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     color: #2C3333;
     padding: 0.3rem 0.5rem;
     border: none;
@@ -379,10 +379,49 @@ footer h3{
 }
 
 
-/**/
+/*Laptop Media*/
 
 @media screen and (min-width:1024px) {
-   body{
-    background-color: #000;
-   }
+    .side-nav{
+        display: none;
+    }
+    header{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px);
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-logo{
+        width: 100%;
+    }
+
+    .header-main-container{
+        display: block;
+        backdrop-filter: unset;
+        max-width: 800px;
+    }
+    .navbar{
+        position: unset;
+        display: flex;
+        backdrop-filter: unset;
+        width: unset;
+        background: unset;
+    }
+    .nav-ul{
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .nav-ul li{
+        margin: 0rem 1rem;
+        font-size: 1.542rem;
+        border: none;
+    }
+
+
+
+    
 }
