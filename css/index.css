@@ -20,6 +20,7 @@ header{
 .header-main-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 0.3rem;
     background-color: #2C3333;
     color: #f5f5f5;
@@ -30,7 +31,7 @@ header{
 
 .nav-logo{
     filter: invert(100%);
-    width: 100%;
+    width: 80%;
 }
 .navbar{
     width: 100%;
@@ -38,6 +39,7 @@ header{
     background-color: #2C3333;
     color: #f5f5f5;
     padding: 0.3rem 0.5rem;
+    
     
 }
 .nav-ul{
@@ -58,7 +60,7 @@ header{
 .navBtn-close span
 {
     padding-right: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .close{
@@ -240,11 +242,13 @@ footer p {
     padding: 1rem;
     background-color: #2E4F4F;
     border-radius: 16px;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    width: 80%;
+
 }
 .project-img{
     border-radius: 15px;
-    width: 90%;
+    width: 60%;
 }
 .projects-section h3{
     font-size: 1.8rem;
@@ -254,7 +258,6 @@ footer p {
 
 /*Form*/
 .contact-form-section{
-    background: #27374D;
     margin: 1rem 0.5rem;
     border-radius: 16px;
 }
@@ -266,14 +269,12 @@ footer p {
 
 .contact-form-section h2{
     font-size: 1.2rem;
-    color: #f5f5f5;
-    text-shadow: none;
 }
 .input-tab{
-    background-color: #27374D;
-    color: #f5f5f5;
+    background-color: #A8A196;
+    color: #000;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid #A8A196;
     outline: none;
     padding: 1rem;
     font-size: 1.2rem;
@@ -281,15 +282,22 @@ footer p {
 .form-btn{
     padding: 1rem;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 3px solid #A8A196;
     outline: none;
     padding: 1rem;
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background: transparent;
-    color: #f5f5f5;
+    color: #2E4F4F;
     cursor: pointer;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+}
+footer h3{
+    font-size: 1.1rem;
 }
 
 
@@ -306,12 +314,12 @@ footer p {
     }
 
 
-        .developer-details h3,
-        .projects-section h3,
-        footer h3 {
-            font-size: 1.8rem;
+    .developer-details h3,
+    .projects-section h3,
+    footer h3 {
+        font-size: 1.8rem;
 
-        }
+    }
     
         .developer-details p,
         .about-developer p,
@@ -326,7 +334,6 @@ footer p {
             width: 35%;
         }
         .developer-section,
-        .services,
         .projects-section,
         .contact-form-section,
         footer{
@@ -341,5 +348,23 @@ footer p {
         }
         .project-img{
             width: 50%;
+        }
+        .services{
+            display: flex;
+            width: 100%;
+        }
+        .service-card{
+            width: 45%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .services-card-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card-img{
+            width: 80%;
         }
 }
